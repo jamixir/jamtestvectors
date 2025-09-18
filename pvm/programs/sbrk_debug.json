@@ -1,0 +1,20 @@
+{
+  "name": "sbrk_debug",
+  "initial-regs": [42, 99, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  "initial-pc": 0,
+  "initial-page-map": [
+    {
+      "address": 0,
+      "length": 8192,
+      "is-writable": true
+    }
+  ],
+  "initial-memory": [],
+  "initial-gas": 10000,
+  "program": [0, 0, 2, 101, 18, 0],
+  "expected-status": "panic",
+  "expected-regs": [42, 99, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  "expected-pc": 2,
+  "expected-memory": [],
+  "expected-gas": 9998
+}

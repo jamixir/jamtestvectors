@@ -1,0 +1,20 @@
+{
+  "name": "sbrk_zero_query",
+  "initial-regs": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  "initial-pc": 0,
+  "initial-page-map": [
+    {
+      "address": 65536,
+      "length": 4096,
+      "is-writable": true
+    }
+  ],
+  "initial-memory": [],
+  "initial-gas": 10000,
+  "program": [0, 0, 2, 101, 1, 0],
+  "expected-status": "panic",
+  "expected-regs": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  "expected-pc": 2,
+  "expected-memory": [],
+  "expected-gas": 9998
+}
